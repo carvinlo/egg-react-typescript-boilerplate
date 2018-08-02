@@ -8,31 +8,31 @@ import RouterController from './controller/router/router';
 import SPAController from './controller/spa/spa';
 
 declare module 'egg' {
-  export interface IController {
-    about: {
-      about: AboutController
-    },
-    ant: {
-      ant: AntController
-    },
-    app: {
-      app: AppController,
-    },
-    css: {
-      css: CssController
-    },
-    hello: {
-      hello: HelloController
-    },
-    home: {
-      home: HomeController
-    },
-    router: {
-      router: RouterController
-    },
-    spa: {
-      spa: SPAController
-    },
-  }
-  function startCluster(options: any);
+	export interface IController {
+		about: {
+			about: AboutController;
+		};
+		ant: {
+			ant: AntController;
+		};
+		app: {
+			app: AppController;
+		};
+		css: {
+			css: CssController;
+		};
+		hello: {
+			hello: HelloController;
+		};
+		home: {
+			home: HomeController;
+		};
+		router: {
+			router: RouterController;
+		};
+		spa: {
+			spa: SPAController;
+		};
+	}
+	function startCluster(options: any);
 }

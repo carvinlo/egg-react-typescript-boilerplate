@@ -1,21 +1,50 @@
 {
-  "extends": "./config/tsconfig.json",
-  "compileOnSave": true,
-  "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs"
-  },
-  "include": [
-    "index.ts",
-    "app/**/*.ts",
-    "config/**/*.ts",
-    "mock/**/*.ts",
-    "test/**/*.ts"
-  ],
-  "exclude": [
-    "public",
-    "app/web",
-    "app/public",
-    "app/view"
-  ]
+	"compilerOptions": {
+		"baseUrl": "./", // enables project relative paths config
+		"paths": {
+			// define paths mappings
+			"@src/*": ["src/*"] // will enable -> import { ... } from '@src/components'
+			// in webpack you need to add -> resolve: { alias: { '@src': PATH_TO_SRC } }
+		},
+		"outDir": "output/dist/", // target for compiled files
+		"allowSyntheticDefaultImports": true, // no errors with commonjs modules interop
+		"allowJs": true, // include js files
+		"checkJs": true, // typecheck js files
+		"declaration": false, // don't emit declarations
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"importHelpers": true, // importing helper functions from tslib
+		"noEmitHelpers": true, // disable emitting inline helper functions
+		"jsx": "react", // process JSX
+		"target": "es2015", // "es2015" for ES6+ engines
+		"module": "esnext", // "es2015" for tree-shaking
+		"moduleResolution": "node",
+		"noEmitOnError": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitAny": false,
+		"noImplicitReturns": true,
+		"noImplicitThis": false,
+		"noUnusedLocals": true,
+		"strict": true,
+		"pretty": true,
+		"removeComments": true,
+		"sourceMap": true,
+		"types": ["intern", "node"],
+		"downlevelIteration": true,
+		"jsxFactory": "React.createElement",
+		"typeRoots": ["./node_modules/@types"],
+		"lib": [
+			"dom",
+			"es5",
+			"es2015.core",
+			"es2015.promise",
+			"es2015.collection",
+			"es2015.iterable",
+			"es2015.promise",
+			"es2015.symbol",
+			"es2015.symbol.wellknown"
+		]
+	},
+	"exclude": ["app/public", "app/views", "node_modules*"]
 }

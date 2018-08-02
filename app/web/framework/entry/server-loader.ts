@@ -1,6 +1,6 @@
 module.exports = function() {
-  this.cacheable();
-  return `
+	this.cacheable();
+	return `
     import React, { Component } from 'react';
     import Layout from 'framework/layout/layout.jsx';
     import Header from 'component/header/header.jsx';

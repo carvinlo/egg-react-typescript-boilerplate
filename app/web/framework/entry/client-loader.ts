@@ -1,6 +1,6 @@
 module.exports = function() {
-  this.cacheable();
-  return `
+	this.cacheable();
+	return `
     import React from 'react';
     import ReactDom from 'react-dom';
     import { AppContainer } from 'react-hot-loader';
