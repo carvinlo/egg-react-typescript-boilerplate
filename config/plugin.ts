@@ -1,5 +1,6 @@
+import * as path from 'path';
 export default {
 	reactssr: {
-		package: 'egg-view-react-ssr'
+		path: path.join(__dirname, '../lib/plugin/egg-view-react')
 	}
 };

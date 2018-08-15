@@ -1,3 +1,7 @@
+TODO:
+server-side-render-resource
+node build.js
+
 # egg-react-typescript-boilerplate
 
 基于 Egg + React + TypeScript + Webpack4 多页面和单页面服务端客户端渲染同构工程骨架项目, Webpack3 构建请见 [webpack3](https://github.com/hubcarl/egg-react-typescript-boilerplate/tree/webpack3) 分支.
