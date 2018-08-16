@@ -1,9 +1,6 @@
 {
   "files.exclude": {
-    "USE_GITIGNORE": true,
-    "**/*.js": {
-      "when": "$(basename).ts"
-    }
+    "USE_GITIGNORE": true
   },
   "path-intellisense.mappings": {
     "lib": "${workspaceRoot}/app/web/lib",

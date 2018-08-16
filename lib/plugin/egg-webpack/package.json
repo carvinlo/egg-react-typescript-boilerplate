@@ -35,7 +35,6 @@
 	"dependencies": {
 		"co-request": "^0.2.0",
 		"iconv-lite": "^0.2.11",
-		"webpack-tool": "^4.0.0",
 		"co": "^4.6.0"
 	},
 	"deprecated": false,
