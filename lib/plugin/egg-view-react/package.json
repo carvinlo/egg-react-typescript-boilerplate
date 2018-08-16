@@ -33,7 +33,7 @@
     "version": "6, 8"
   },
   "dependencies": {
-    "server-side-render-resource": "^1.0.2"
+	"serialize-javascript": "^1.4.0"
   },
   "deprecated": false,
   "description": "react server side render for egg",
