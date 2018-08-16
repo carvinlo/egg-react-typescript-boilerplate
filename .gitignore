@@ -1,6 +1,6 @@
 .DS_Store
 .happypack/
-node_modules/
+/node_modules
 npm-debug.log
 .idea/
 dist
@@ -16,7 +16,7 @@ _site
 logs
 app/**/*.js
 config/**/*.js
-index.js
+/index.js
 config/buildConfig.json
 config/manifest.json
 app/view/*

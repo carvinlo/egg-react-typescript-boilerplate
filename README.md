@@ -1,5 +1,4 @@
 TODO:
-server-side-render-resource
 node build.js
 
 # egg-react-typescript-boilerplate
