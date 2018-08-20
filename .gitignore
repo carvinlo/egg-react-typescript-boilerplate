@@ -23,3 +23,10 @@ app/view/*
 !app/view/README.md
 !app/view/.gitkeep
 package-lock.json
+typings/config/plugin.d.ts
+config/config.default.js
+config/config.local.js
+config/config.prod.js
+config/config.test.js
+config/plugin.js
+config/plugin.local.js
