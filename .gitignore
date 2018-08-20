@@ -1,6 +1,6 @@
 .DS_Store
 .happypack/
-/node_modules
+node_modules
 npm-debug.log
 .idea/
 dist

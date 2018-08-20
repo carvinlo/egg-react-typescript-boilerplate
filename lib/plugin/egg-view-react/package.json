@@ -1,97 +1,21 @@
 {
-  "_from": "egg-view-react-ssr@^2.1.0",
-  "_id": "egg-view-react-ssr@2.3.1",
-  "_inBundle": false,
-  "_integrity": "sha1-KjSH/ZkcIg8YB3+wYVE9N6ddZVA=",
-  "_location": "/egg-view-react-ssr",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "egg-view-react-ssr@^2.1.0",
-    "name": "egg-view-react-ssr",
-    "escapedName": "egg-view-react-ssr",
-    "rawSpec": "^2.1.0",
-    "saveSpec": null,
-    "fetchSpec": "^2.1.0"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "http://registry.npm.taobao.org/egg-view-react-ssr/download/egg-view-react-ssr-2.3.1.tgz",
-  "_shasum": "2a3487fd991c220f18077fb061513d37a75d6550",
-  "_spec": "egg-view-react-ssr@^2.1.0",
-  "_where": "/Users/carvinlo/Downloads/Github/egg-react-typescript-boilerplate-master",
-  "author": {
-    "name": "hubcarl@126.com"
-  },
-  "bugs": {
-    "url": "https://github.com/hubcarl/egg/issues"
-  },
   "bundleDependencies": false,
   "ci": {
     "version": "6, 8"
   },
   "dependencies": {
-	"serialize-javascript": "^1.4.0"
+    "serialize-javascript": "^1.4.0"
   },
   "deprecated": false,
   "description": "react server side render for egg",
-  "devDependencies": {
-    "autod": "^2.8.0",
-    "autod-egg": "^1.0.0",
-    "conventional-changelog-cli": "^1.3.5",
-    "egg": "^1.4.0",
-    "egg-bin": "^3.4.0",
-    "egg-ci": "^1.6.0",
-    "egg-mock": "^3.7.0",
-    "eslint": "^3.19.0",
-    "eslint-config-egg": "^4.2.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "supertest": "^3.0.0",
-    "webstorm-disable-index": "^1.2.0"
-  },
   "eggPlugin": {
     "name": "reactssr"
   },
-  "engines": {
-    "node": ">=6.0.0"
-  },
-  "files": [
-    "app",
-    "lib",
-    "config",
-    "agent.js",
-    "app.js"
-  ],
-  "homepage": "https://github.com/hubcarl/egg-view-react-ssr#readme",
-  "keywords": [
-    "egg",
-    "eggPlugin",
-    "egg-plugin",
-    "react",
-    "react server side render"
-  ],
   "license": "MIT",
   "name": "egg-view-react-ssr",
   "peerDependencies": {
     "react": "*",
     "react-dom": "*"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hubcarl/egg-view-react-ssr.git"
-  },
-  "scripts": {
-    "autod": "autod",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
-    "cov": "egg-bin cov",
-    "lint": "eslint .",
-    "pkgfiles": "egg-bin pkgfiles",
-    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
-    "test-local": "egg-bin test"
   },
   "version": "2.3.1"
 }

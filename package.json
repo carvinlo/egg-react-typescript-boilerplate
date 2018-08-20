@@ -20,13 +20,23 @@
 		"prettier": "prettier --write 'config/**/*.ts' 'app/**/*.ts' 'tests/**/*.ts'"
 	},
 	"dependencies": {
+		"babel-loader": "^7.1.2",
+		"cache-loader": "^1.2.2",
+		"css-loader": "^0.28.4",
+		"eslint-loader": "^2.0.0",
+		"file-loader": "^1.1.10",
+		"isomorphic-style-loader": "^4.0.0",
+		"postcss-loader": "^2.1.0",
+		"react-hot-loader": "^4.3.4",
+		"style-loader": "^0.18.2",
+		"thread-loader": "^1.1.5",
+		"url-loader": "^0.5.8",
 		"cross-env": "^5.0.0",
 		"egg": "^2.1.0",
 		"egg-cors": "^2.0.0",
 		"egg-logger": "^1.5.0",
 		"egg-scripts": "^2.6.0",
 		"egg-validate": "^1.0.0",
-		"egg-view-react-ssr": "^2.1.0",
 		"extend": "~3.0.0",
 		"history": "^4.7.2",
 		"husky": "^0.14.3",
@@ -58,12 +68,8 @@
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",
 		"babel-preset-env": "^1.6.0",
 		"babel-preset-react": "^6.24.1",
-		"easywebpack-cli": "^3.8.0",
-		"easywebpack-react": "^4.0.0",
 		"egg-bin": "^4.7.1",
 		"egg-ts-helper": "^1.9.0",
-		"egg-webpack": "^4.0.0",
-		"egg-webpack-react": "^2.0.0",
 		"eslint": "^4.6.1",
 		"eslint-config-egg": "^5.1.1",
 		"eslint-plugin-react": "^7.1.0",
@@ -85,19 +91,7 @@
 	"egg": {
 		"typescript": true
 	},
-	"engines": {
-		"node": ">=6.0.0"
-	},
-	"ci": {
-		"version": "6, 7, 8"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/hubcarl/egg-react-typescript-boilerplate.git"
-	},
-	"author": "hubcarl@126.com",
 	"license": "MIT",
-	"homepage": "https://github.com/hubcarl/egg-react-typescript-boilerplate",
 	"lint-staged": {
 		"*.{ts,tsx}": [
 			"prettier --write",
